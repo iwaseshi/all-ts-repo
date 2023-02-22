@@ -1,6 +1,29 @@
-# Dependency directories
-node_modules/
+*.d.ts
+*.js
+.gen
+!setup.js
+tsconfig.tsbuildinfo
+dist
 
-# System Files
+# turbo
+.turbo
+
+# terraform
+cdktf.out
+cdktf.log
+.terraform
+*terraform.*.tfstate*
+
+# dependencies
+node_modules
+
+# system Files
 **/.DS_Store
 *.DS_Store
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
