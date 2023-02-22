@@ -1,0 +1,27 @@
+{
+  "name": "exampe",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "infrastructure"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "lint": "turbo run lint",
+    "fix": "turbo run fix",
+    "test": "turbo run test",
+    "deploy": "turbo run deploy",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "turbo": "^1.4.2"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@1.22.19"
+}

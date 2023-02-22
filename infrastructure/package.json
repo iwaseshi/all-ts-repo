@@ -1,0 +1,32 @@
+{
+  "name": "infrastructure",
+  "version": "1.0.0",
+  "main": "main.js",
+  "types": "main.ts",
+  "license": "MPL-2.0",
+  "private": true,
+  "scripts": {
+    "build": "tsup",
+    "deploy": "cdktf deploy",
+    "get": "cdktf get",
+    "synth": "cdktf synth",
+    "test": "vitest run",
+    "upgrade": "yarn add cdktf@latest cdktf-cli@latest",
+    "upgrade:next": "yarn add cdktf@next cdktf-cli@next"
+  },
+  "engines": {
+    "node": ">=14.0"
+  },
+  "dependencies": {
+    "@cdktf/provider-google": "^5.0.3",
+    "cdktf": "^0.15.0",
+    "constructs": "^10.1.242"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.19",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.2.1",
+    "typescript": "^4.9.5",
+    "vitest": "^0.23.4"
+  }
+}
