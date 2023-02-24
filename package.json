@@ -1,9 +1,10 @@
 {
-  "name": "exampe",
+  "name": "example",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "infrastructure"
+    "infrastructure",
+    "pipeline/*"
   ],
   "scripts": {
     "dev": "turbo run dev --parallel",
@@ -12,6 +13,7 @@
     "lint": "turbo run lint",
     "fix": "turbo run fix",
     "test": "turbo run test",
+    "ci": "yarn workspace @projects/cicd run ci",
     "deploy": "turbo run deploy",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
@@ -20,8 +22,8 @@
     "turbo": "^1.4.2"
   },
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
+    "node": ">=16.0.0",
+    "npm": "please_use_yarn_instead"
   },
   "packageManager": "yarn@1.22.19"
 }

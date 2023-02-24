@@ -1,0 +1,18 @@
+{
+  "name": "@projects/cicd",
+  "version": "1.0.0",
+  "license": "MPL-2.0",
+  "private": true,
+  "scripts": {
+    "ci": "node --loader ts-node/esm ./build.mts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@dagger.io/dagger": "^0.3.4",
+    "@types/node": "^18.11.19",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.2.1",
+    "typescript": "^4.9.5",
+    "vitest": "^0.23.4"
+  }
+}
