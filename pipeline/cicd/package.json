@@ -1,21 +1,10 @@
 {
-  "name": "cicd",
+  "name": "@projects/cicd",
   "version": "1.0.0",
-  "main": "main.js",
-  "types": "main.ts",
   "license": "MPL-2.0",
   "private": true,
   "scripts": {
-    "build": "tsup",
-    "deploy": "cdktf deploy",
-    "get": "cdktf get",
-    "synth": "cdktf synth",
-    "test": "vitest run",
-    "upgrade": "yarn add cdktf@latest cdktf-cli@latest",
-    "upgrade:next": "yarn add cdktf@next cdktf-cli@next"
-  },
-  "engines": {
-    "node": ">=14.0"
+    "ci": "node --loader ts-node/esm ./build.mts"
   },
   "dependencies": {},
   "devDependencies": {
